@@ -9,7 +9,7 @@ var
 		easingClose: 'swing',
 		closedSymbol: '&#9658;',
 		openedSymbol: '&#9660;',
-		prependTo: 'html',
+		prependTo: '.slicknav-container',
 		parentTag: 'a',
 		closeOnClick: false,
 		allowParentLinks: true,

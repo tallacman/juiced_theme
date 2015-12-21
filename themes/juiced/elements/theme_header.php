@@ -4,7 +4,9 @@
 
 <body>
 <div class="<?php echo $c->getPageWrapperClass()?>">
+<div class="slicknav-container">
 
+</div>
 <div class="container">
     <div class="col-12">
         <?php
