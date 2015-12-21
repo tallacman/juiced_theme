@@ -1,0 +1,5 @@
+Put js files here.
+Import into your theme_footer.php file with this format:
+
+<script src="<?php echo $this->getThemePath()?>/js/myjavascriptfile.js">
+</script>
