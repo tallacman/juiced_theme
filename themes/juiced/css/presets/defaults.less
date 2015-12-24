@@ -2,23 +2,42 @@
 // this is called at the top of the main.less
 
 @preset-name: "Defaults";
-@preset-icon: concrete-icon(#31618d, #fff, #ff0000);
+@preset-icon: concrete-icon(#105da3, #fff, #ff0000);
 @preset-fonts-file: "build/fonts/defaults.less";
 
 /* 1.A Colors */
-@color-primary: #2E5DBB;
-@color-alt: #DC8712;
-@color-link: @color-alt;
-@color-link-visited: @color-link;
+// these are the concrete 5 less calls needed in this format fo the
+// styles.xml file. We define them here and call these variables
+//into the juicedcss equivalents below
+
+@primary-color: #2E5DBB;
+@alt-color: #DC8712;
+@link-color: @alt-color;
+@link-visited-color: @link-color;
+
+@dark-color: #212121;
+@light-color: #aaa;
+@white-color: #fff;
+@green-color: #1a4;
+@red-color: #AA252B;
+@blue-color: #105da3;
+@yellow-color: #fae17b;
+
+// above values imported to their juicedcss equivalents
+
+@color-primary: @primary-color;
+@color-alt: @alt-color;
+@color-link: @link-color;
+@color-link-visited: @link-color;
 
 // more colors than here used
-@color-dark: #212121;
-@color-light: #aaa;
-@color-white: #fff;
-@color-green: #1a4;
-@color-red: #AA252B;
-@color-blue: #2E5DBB;
-@color-yellow: #fae17b;
+@color-dark: @dark-color;
+@color-light: @light-color;
+@color-white: @white-color;
+@color-green: @green-color;
+@color-red: @red-color;
+@color-blue: @blue-color;
+@color-yellow: @yellow-color;
 
 // gutters
 @gutters: 16px;
@@ -52,11 +71,16 @@
 
 // slicknav styles
 @mobile-menu-activation-size: 767px;
+// if specified in javascript
 @slicknav-sitename-color: @color-primary;
+
 @slicknav-bottom-border: @color-primary;
+// hamburger menu button
 @slicknav-button-color: @color-primary;
-@slicknav-background-color: @color-white;
 @slicknav-button-text-color: @color-white;
-@slicknav-background-hover-color: @color-primary;
+// affects the dropdown too
+@slicknav-background-color: @color-white;
+// slicknav link styles
 @slicknav-nav-link-color: @color-primary;
+@slicknav-background-hover-color: @color-primary;
 @slicknav-link-hover-color: @color-primary;
