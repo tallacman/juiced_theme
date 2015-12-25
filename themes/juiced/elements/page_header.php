@@ -1,7 +1,8 @@
 <?php  defined('C5_EXECUTE') or die(_("Access Denied.")); ?>
 
-<!--   page header code required by html and concrete5    -->
 <!doctype html>
+<!--   page header code required by html and concrete5    -->
+
 <html class="no-js" lang="<?php echo Localization::activeLanguage()?>">
 <head>
 <?php  Loader::element('header_required'); ?>

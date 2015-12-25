@@ -1,14 +1,16 @@
-
 body .ccm-page {
     font-size: @body-type-font-size;
     line-height: @body-type-font-leading-size;
     color: @body-type-font-color;
 }
-
-  .ccm-page {
-
-   * {
+.ccm-page {
+    * {
         box-sizing: border-box;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: inline-block;
     }
     h1,
     h2,
@@ -18,8 +20,28 @@ body .ccm-page {
     h6 {
         font-family: @header-type-font-family;
         font-weight: @header-type-font-weight;
-        line-height:@header-type-font-leading-size;
+        line-height: @header-type-font-leading-size;
         color: @header-type-font-color;
+        margin-top: 0.5em;
+        margin-bottom: 0.8rem;
+    }
+    h1 {
+        font-size: @h1-font-size;
+    }
+    h2 {
+        font-size: @h2-font-size;
+    }
+    h3 {
+        font-size: @h3-font-size;
+    }
+    h4 {
+        font-size: @h4-font-size;
+    }
+    h5 {
+        font-size: @h5-font-size;
+    }
+    h6 {
+        font-size: @h6-font-size;
     }
     h1 small,
     h2 small,
@@ -51,6 +73,12 @@ body .ccm-page {
     a.no-text-decoration,
     a.no-t-d {
         text-decoration: none;
+    }
+    dl {
+        margin-left: 1em;
+    }
+    dt {
+        font-weight: bold;
     }
     pre {
         background: #f7f7f7;
@@ -88,7 +116,7 @@ body .ccm-page {
         display: inline;
     }
     p {
-        margin-bottom: 2.8rem;
+        margin-bottom: 1rem;
     }
     ul.no-style,
     ol.no-style,
