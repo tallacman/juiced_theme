@@ -1,8 +1,115 @@
+/* @override http://localhost:8888/sexo/packages/theme_juiced/themes/juiced/css/theme.css */
 /* this theme css gets called by the main.less on publish */
+img {
+    max-width: 100%;
+    height: auto;
+    display: inline-block;
+}
+.sidebar {
+    text-align: center;
+    color: white;
+    padding-top: 25px;
+}
+main {
+    padding-top: 12px;
+}
+.ccm-block-social-links,
+.sidebar h5 {
+    font-size: 1em;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #a1a1a1;
+}
+.ccm-block-social-links {
 
-#header-site-title{
-font-family: @header-site-title-font-family;
-font-size: @header-site-title-font-size;
-
-
-        }
+}
+.sidebar ul {
+    padding: 0;
+    margin: 0;
+}
+.sidebar li {
+    list-style-type: none;
+}
+p.ccm-block-next-previous-next-link {
+    float: right;
+}
+ul.list-inline li {
+    display: inline;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+div.ccm-block-next-previous-wrapper.container a {
+    font-size: 90%;
+    font-style: italic;
+    color: black;
+}
+span.ccm-block-tags-tag.label:hover,
+span.ccm-block-tags-tag.label {
+    color: inherit;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    font-style: italic;
+}
+.social {
+    font-size: 90%;
+}
+.juiced-page-list img {
+    border: 1px solid silver;
+}
+.juiced-page-list .col-10 {
+    padding: 20px;
+    background-color: white;
+    margin-top: -42px;
+    border-bottom: 1px solid silver;
+}
+.full-height {
+    min-height: 100vh;
+}
+.background-color-sidebar {
+    background-color: #888;
+}
+.sidebar a,
+.sidebar nav a,
+.sidebar {
+    color: white !important;
+}
+.sitename {
+    font-family: raleway;
+    font-size: 33px;
+    font-weight: 200;
+}
+body {
+    background-color: #f9f9f9;
+}
+nav {
+    padding-bottom: 15px;
+}
+nav ul,
+nav li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+nav ul li {
+    position: relative;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    left: 100%;
+    z-index: 12;
+    background-color: #777;
+    width: 200px;
+    top: 0;
+}
+nav ul li:hover > ul {
+    display: block;
+}
+nav ul ul li:hover {
+    background-color: #333;
+}
