@@ -1,0 +1,243 @@
+// all the theme variables will live here
+// this is called at the top of the main.less
+
+@preset-name: "Defaults";
+@preset-icon: concrete-icon(#105da3, #fff, #ff0000);
+@preset-fonts-file: "build/fonts/defaults.less";
+
+
+// lets define out colors
+/* 1.A Colors */
+// these are the concrete 5 less calls needed in this format fo the
+// styles.xml file. We define them here and call these variables
+// into the juicedcss equivalents below
+
+@primary-color: #ffffff;
+@secondary-color: #333333;
+
+@accent-color: #DC8712;
+
+// default link colors
+@link-color: #DC8712;
+@link-visited-color: #DC8712;
+@color-link-visited: #DC8712;
+
+// borrowed from elemental defaults.less
+
+// Global body background
+@page-background-color: #ffffff;
+
+// sitename settings
+@sitename-type-color: #DC8712;
+@sitename-type-font-weight: 200;
+@sitename-type-font-size: 2.30em;
+@sitename-type-text-transform: capitalize;
+@sitename-type-font-family: Raleway, sans-serif;
+@sitename-type-font-style: normal;
+
+// Top Header - Main Navigation */
+@header-navigation-type-color: #ffffff;
+@header-navigation-type-font-size: 1.00em;
+@header-navigation-type-font-weight: 700;
+@header-navigation-type-font-family: 'Titillium Web';
+@header-navigation-type-text-transform: none;
+
+@header-navigation-hover-color: #abddff;
+@header-navigation-menu-background-color: #fff;
+@header-navigation-menu-border-color: #edf2f3;
+@header-navigation-menu-background-hover-color: #D6F7FF;
+@header-navigation-menu-text-color: #a2a2a2;
+@header-navigation-menu-text-hover-color: #0099ff;
+
+// Typography
+@body-type-font-family: Raleway, sans-serif;
+@body-type-color: #444444;
+@body-type-font-size: 1.0em;
+@body-type-font-weight: 400;
+
+// Links
+@body-link-color: #DC8712;
+@body-link-hover-color: #ad6603;
+
+// Headings
+@h1-type-font-family:  Raleway, sans-serif;
+@h1-type-color: #333;
+@h1-type-font-size: 2.1em;
+@h1-type-font-weight: 700;
+
+@h2-type-font-family:  Raleway, sans-serif;
+@h2-type-color: #333;
+@h2-type-font-size: 1.46em;
+@h2-type-font-weight: 700;
+
+@h3-type-font-family:  Raleway, sans-serif;
+@h3-type-color: #333;
+@h3-type-font-size: 1.25em;
+@h3-type-font-weight: 700;
+
+@h4-type-font-family:  Raleway, sans-serif;
+@h4-type-color: #333;
+@h4-type-font-size: 1.05em;
+@h4-type-font-weight: 700;
+
+@h5-type-font-family:  Raleway, sans-serif;
+@h5-type-color: #333;
+@h5-type-font-size: 0.73em;
+@h5-type-font-weight: 700;
+@h5-type-text-transform: uppercase;
+
+@h6-type-font-family:  Raleway, sans-serif;
+@h6-type-color: #333;
+@h6-type-font-size: 0.73em;
+@h6-type-font-weight: 400;
+@h6-type-text-transform: uppercase;
+
+// Page title block
+@page-title-type-font-family:  Raleway, sans-serif;
+@page-title-type-color: #75ca2a;
+@page-title-type-font-size: 1.73em;
+@page-title-type-font-weight: 700;
+@page-title-type-text-transform: uppercase;
+@pagination-border-color: #d4efbd;
+
+// Image slider
+@image-slider-navigation-color: #ccccc9;
+@image-slider-navigation-active-color: #75ca2a;
+@image-slider-background-image: '../images/background-slider-default.png';
+
+@image-slider-title-type-color: #75ca2a;
+@image-slider-title-type-font-family:  Raleway, sans-serif;
+@image-slider-title-type-font-size: 3.2em;
+@image-slider-title-type-font-weight: 200;
+@image-slider-paragraph-type-color: #6e6e6e;
+@image-slider-paragraph-type-font-family:  Raleway, sans-serif;
+@image-slider-paragraph-type-font-size: 1.1em;
+@image-slider-paragraph-type-font-weight: 400;
+
+// Blockquote
+@blockquote-left-padding-size: 60px;
+@blockquote-type-font-size: 1.46em;
+@blockquote-type-font-weight: 300;
+@blockquote-type-color: #5b676c;
+@blockquote-border-color: #bdcfd8;
+
+// Section Divider
+@content-section-divider-color: #ececec;
+
+// Footer site title
+@footer-site-title-type-color: #75ca2a;
+@footer-site-title-type-font-weight: 900;
+@footer-site-title-type-font-size: 1.2em;
+@footer-site-title-type-text-transform: uppercase;
+@footer-site-title-type-font-family:  Raleway, sans-serif;
+
+// Footer social icons
+@footer-social-icon-color: #d1d1d1;
+@footer-social-icon-hover-color: #75ca2a;
+@footer-link-color: #75ca2a;
+@footer-link-hover-color: #548627;
+
+// Miscellaneous
+@default-button-border-color: #b7e390;
+@accent-background-color: #f8faf1;
+@accent-header-color: #988e47;
+
+@title-thin-type-font-family:  Raleway, sans-serif;
+@title-thin-type-color: #75ca2a;
+@title-thin-type-font-size: 2.46em;
+
+@title-caps-type-font-family:  Raleway, sans-serif;
+@title-caps-type-color: #75ca2a;
+@title-caps-type-font-size: 1.73em;
+
+@image-caption-type-font-family:  Raleway, sans-serif;
+@image-caption-type-color: #b8c4cd;
+@image-caption-type-font-size: 1em;
+@image-caption-type-font-style: italic;
+
+@home-feature-title-color: #1a1a1a;
+@home-feature-icon-color: #1a1a1a;
+
+@footer-top-background-color: #ffffff;
+@footer-bottom-background-color: transparent;
+@footer-text-color: #5b676c;
+@footer-section-divider-color: #d9d9d9;
+
+
+// end elemental.less borrow
+
+
+
+@page-background-color: @primary-color;
+
+
+// navigation colors
+@menu-link-color:@link-color;
+@menu-link-background-color: inherit;
+@menu-link-hover-color:darken(@link-color,20%);
+@menu-link-background-hover-color: inherit;
+// subnav
+@subnav-menu-link-color:;
+@subnav-menu-link-background-color:;
+@subnav-menu-link-hover-color:;
+@subnav-menu-link-background-hover-color:;
+// area colors
+@sidebar-background-color:;
+@main-background-color:;
+// social icon colors
+@social-icon-color:;
+@social-icon-hover-color:;
+
+// page link color-link-visited
+@content-link-color:#222;
+@content-link-decoration: underline;
+@content-link-background-color: inherit;
+
+//content link
+@content-link-color:#ff0000;
+@content-link-background-color: inherit;
+@content-link-decoration: none;
+// content link HOVER
+@content-link-hover-color:#ff0000;
+@content-link-background-hover-color: inherit;
+@content-link-hover-decoration: none;
+
+@button-primary-color:;
+@button-primary-hover-color:;
+
+
+// gutters
+@gutters: 32px;
+
+// Breadkpoints
+@screen-xs-min: 480px;
+@screen-sm-min: 768px;
+@screen-md-min: 992px;
+@screen-lg-min: 1200px;
+@container-max-width: 1170px;
+
+// body font variables
+
+// header font sizes
+@h1-font-size: 2.5em;
+@h2-font-size: 2.2em;
+@h3-font-size: 2.0em;
+@h4-font-size: 1.8em;
+@h5-font-size: 1.5em;
+@h6-font-size: 1.2em;
+
+// slicknav styles
+@mobile-menu-activation-size: 767px;
+// if specified in javascript
+@slicknav-sitename-color: #333;
+
+@slicknav-bottom-border: #fff;
+// hamburger menu button
+@slicknav-button-color: #999;
+@slicknav-button-text-color: #000;
+// affects the dropdown too
+@slicknav-background-color: #fff;
+// slicknav link styles
+@slicknav-nav-link-color: #444;
+@slicknav-background-hover-color: #444;
+@slicknav-link-hover-color: #fff;

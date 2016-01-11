@@ -5,59 +5,85 @@
 @preset-icon: concrete-icon(#105da3, #fff, #ff0000);
 @preset-fonts-file: "build/fonts/defaults.less";
 
+
+// lets define out colors
 /* 1.A Colors */
 // these are the concrete 5 less calls needed in this format fo the
 // styles.xml file. We define them here and call these variables
-//into the juicedcss equivalents below
+// into the juicedcss equivalents below
 
-@primary-color: #2E5DBB;
-@alt-color: #DC8712;
-@link-color: @alt-color;
-@link-visited-color: @link-color;
+// Global body background
+@page-background-color: #ffffff;
 
-@dark-color: #212121;
-@light-color: #aaa;
-@white-color: #fff;
-@green-color: #1a4;
-@red-color: #AA252B;
-@blue-color: #105da3;
-@yellow-color: #fae17b;
 
-// above values imported to their juicedcss equivalents
+// sitename settings
+@sitename-type-color: #DC8712;
+@sitename-type-font-weight: 300;
+@sitename-type-font-size: 2.3em;
+@sitename-type-text-transform: none;
+@sitename-type-font-family: Raleway, sans-serif;
+@sitename-type-font-style: normal;
 
-@color-primary: @primary-color;
-@color-alt: @alt-color;
-@color-link: @link-color;
-@color-link-visited: @link-color;
+// Top Header - Main Navigation */
+@header-navigation-type-color: #ffffff;
+@header-navigation-type-font-size: 1.00em;
+@header-navigation-type-font-weight: 400;
+@header-navigation-type-font-family: Raleway, sans-serif;
 
-// more colors than here used
-@color-dark: @dark-color;
-@color-light: @light-color;
-@color-white: @white-color;
-@color-green: @green-color;
-@color-red: @red-color;
-@color-blue: @blue-color;
-@color-yellow: @yellow-color;
+@header-navigation-background-color:#888;
+@header-navigation-background-hover-color:#009;
+@header-navigation-link-hover-color:#f00;
 
-// theme default color-link-visited
-@page-background-color:;
-// navigation colors
-@menu-link-color:;
-@menu-link-background-color:;
-@menu-link-hover-color:;
-@menu-link-background-hover-color:;
-// subnav
-@subnav-menu-link-color:;
-@subnav-menu-link-background-color:;
-@subnav-menu-link-hover-color:;
-@subnav-menu-link-background-hover-color:;
-// area colors
-@sidebar-background-color:;
-@main-background-color:;
-// social icon colors
-@social-icon-color:;
-@social-icon-hover-color:;
+// Typography
+@body-type-font-family: Raleway, sans-serif;
+@body-type-color: #6e6e6e;
+@body-type-font-size: 15px;
+@body-type-font-weight: 400;
 
+// Links
+@body-link-color: #DC8712;
+@body-link-hover-color: #7a4803;
+
+// Headings
+@h1-type-font-family:  Raleway, sans-serif;
+@h1-type-color: #333;
+@h1-type-font-size: 2.1em;
+@h1-type-font-weight: 400;
+@h1-type-text-transform: capitalize;
+
+@h2-type-font-family:  Raleway, sans-serif;
+@h2-type-color: #333;
+@h2-type-font-size: 1.46em;
+@h2-type-font-weight: 400;
+@h2-type-text-transform: capitalize;
+
+@h3-type-font-family:  Raleway, sans-serif;
+@h3-type-color: #333;
+@h3-type-font-size: 1.25em;
+@h3-type-font-weight: 400;
+@h3-type-text-transform: capitalize;
+
+@h4-type-font-family:  Raleway, sans-serif;
+@h4-type-color: #333;
+@h4-type-font-size: 1.05em;
+@h4-type-font-weight: 400;
+@h4-type-text-transform: capitalize;
+
+
+@h5-type-font-family:  Raleway, sans-serif;
+@h5-type-color: #333;
+@h5-type-font-size: 0.73em;
+@h5-type-font-weight: 600;
+@h5-type-text-transform: uppercase;
+
+@h6-type-font-family:  Raleway, sans-serif;
+@h6-type-color: #333;
+@h6-type-font-size: 0.73em;
+@h6-type-font-weight: 600;
+@h6-type-text-transform: uppercase;
+
+
+// end elemental.less borrow
 
 
 // gutters
@@ -70,25 +96,6 @@
 @screen-lg-min: 1200px;
 @container-max-width: 1170px;
 
-// body font variables
-@body-type-font-family: Raleway, sans-serif;
-@body-type-font-size: 1em;
-@body-type-font-leading-size: 1.6;
-@body-type-font-color: #777;
-
-// header font variables
-@header-type-font-family: Raleway, sans-serif;
-@header-type-font-weight: 400;
-@header-type-font-leading-size: 1.1;
-@header-type-font-color: #333;
-
-// header font sizes
-@h1-font-size: 2.5em;
-@h2-font-size: 2.2em;
-@h3-font-size: 2.0em;
-@h4-font-size: 1.8em;
-@h5-font-size: 1.5em;
-@h6-font-size: 1.2em;
 
 // slicknav styles
 @mobile-menu-activation-size: 767px;

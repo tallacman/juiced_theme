@@ -7,18 +7,18 @@
 <div class="slicknav-container">
 
 </div>
-<div class="container">
+
+<header class="container gutters">
     <div class="col-12">
         <?php
         	$a = new GlobalArea('Header Site Title');
         	$a->display();
         ?>
-
     </div>
-</div>
+</header>
 
-<div class="container">
-    <div class="col-12">
+<header class="container gutters">
+    <nav class="col-12">
         <?php
           $bt = BlockType::getByHandle('autonav');
           $bt->controller->displayPages = 'top'; // 'top', 'above', 'below', 'second_level', 'third_level', 'custom', 'current'
@@ -29,5 +29,5 @@
           $bt->controller->displaySubPageLevelsNum = ''; // if displaySubPages is set 'custom'
           $bt->render('templates/slicknav'); // for template 'templates/template_name';
         ?>
-    </div>
-</div>
+    </nav>
+</header>

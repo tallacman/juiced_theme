@@ -1,6 +1,6 @@
 <?php  defined('C5_EXECUTE') or die(_("Access Denied."));
-$this->inc('elements/page_header.php');
-$this->inc('elements/theme_header.php');
+$this->inc('elements/header_page.php');
+$this->inc('elements/header_theme.php');
 ?>
 
 
@@ -8,7 +8,7 @@ $this->inc('elements/theme_header.php');
 
 <div class="container">
     <div class="col-12">
-        <?php print $innerContent; ?>
+        <?php print $innerContent; ?> 
     </div>
 </div>
 
@@ -16,6 +16,6 @@ $this->inc('elements/theme_header.php');
 
 
 <?php
-$this->inc('elements/theme_footer.php');
-$this->inc('elements/page_footer.php');
+$this->inc('elements/footer_theme.php');
+$this->inc('elements/footer_page.php');
 ?>
